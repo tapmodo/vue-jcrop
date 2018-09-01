@@ -20,10 +20,9 @@ export default {
       this.jcrop = Jcrop.attach(img,this.options||{});
       var rect = Jcrop.Rect.sizeOf(this.jcrop.el);
 
-      this.jcrop.listen('crop.update',widget => this.$emit('update',widget));
-      this.jcrop.listen('crop.activate',widget => this.$emit('activate',widget));
-      this.jcrop.listen('crop.change',widget => this.$emit('change',widget));
-      this.jcrop.listen('crop.remove',widget => this.$emit('remove',widget));
+      ['activate','update','change','remove'].forEach(ev => {
+        this.jcrop.listen('crop.'+ev,widget => this.$emit(ev,widget));
+      });
 
       if (this.rect) rect = Jcrop.Rect.from(this.rect);
       else rect = rect.scale(.7,.5).center(rect.w,rect.h)
