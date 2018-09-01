@@ -1,16 +1,13 @@
-import Test from './components/Test.vue'
+import Jcrop from './components/Jcrop.vue'
 
 // Install the components
 export function install (Vue) {
-  Vue.component('test', Test)
+  Vue.component('Jcrop', Jcrop)
   /* -- Add more components here -- */
 }
 
 // Expose the components
-export {
-  Test,
-  /* -- Add more components here -- */
-}
+export { Jcrop }
 
 /* -- Plugin definition & Auto-install -- */
 /* You shouldn't have to modify the code below */
