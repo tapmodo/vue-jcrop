@@ -22,6 +22,7 @@ export default {
 
       this.jcrop.listen('crop.update',widget => this.$emit('update',widget));
       this.jcrop.listen('crop.activate',widget => this.$emit('activate',widget));
+      this.jcrop.listen('crop.change',widget => this.$emit('change',widget));
       this.jcrop.listen('crop.remove',widget => this.$emit('remove',widget));
 
       if (this.rect) rect = Jcrop.Rect.from(this.rect);
