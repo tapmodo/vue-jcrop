@@ -1,7 +1,7 @@
 {
   "name": "vue-jcrop",
   "description": "The Javascript cropping widget for Vue.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Tapmodo Interactive",
     "email": "khallman@tapmodo.com"
