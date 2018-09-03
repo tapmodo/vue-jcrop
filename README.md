@@ -32,9 +32,9 @@ Use specific components:
 
 ```javascript
 import Vue from 'vue'
-import { Test } from 'vue-jcrop'
+import { Jcrop } from 'vue-jcrop'
 
-Vue.component('test', Test)
+Vue.component('Jcrop', Jcrop)
 ```
 
 **⚠️ A css file is included when importing the package. You may have to setup your bundler to embed the css in your page.**
@@ -54,9 +54,9 @@ Use specific components:
 
 ```javascript
 import 'vue-jcrop/dist/vue-jcrop.css'
-import { Test } from 'vue-jcrop/dist/vue-jcrop.common'
+import { Jcrop } from 'vue-jcrop/dist/vue-jcrop.common'
 
-Vue.component('test', Test)
+Vue.component('Jcrop', Jcrop)
 ```
 
 **⚠️ You may have to setup your bundler to embed the css file in your page.**
@@ -81,7 +81,7 @@ Vue.use(VueJcrop)
 Use specific components:
 
 ```javascript
-Vue.component('test', VueJcrop.Test)
+Vue.component('Jcrop', VueJcrop.Jcrop)
 ```
 
 ## Source import
@@ -99,9 +99,9 @@ Use specific components:
 
 ```javascript
 import Vue from 'vue'
-import { Test } from 'vue-jcrop/src'
+import { Jcrop } from 'vue-jcrop/src'
 
-Vue.component('test', Test)
+Vue.component('Jcrop', Jcrop)
 ```
 
 **⚠️ You need to configure your bundler to compile `.vue` files.** More info [in the official documentation](https://vuejs.org/v2/guide/single-file-components.html).
